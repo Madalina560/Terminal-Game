@@ -7,9 +7,10 @@ public class Character {
     int kickVal;
     int defenceVal;
     int specialAtkVal;
+    int availableFunds;
 
     public Character(String name, String charClass, String specialAtk, int health, int punchVal, int kickVal, int defenseVal,
-        int specialAtkVal) {
+        int specialAtkVal, int availableFunds) {
             this.name = name;
             this.charClass = charClass;
             this.specialAtk = specialAtk;
@@ -18,6 +19,7 @@ public class Character {
             this.kickVal = kickVal;
             this.defenceVal = defenseVal;
             this.specialAtkVal = specialAtkVal;
+            this.availableFunds = availableFunds;
     }
 
     public String getName() {
@@ -82,5 +84,13 @@ public class Character {
 
     public void setSpecialAtkVal(int specialAtkVal) {
         this.specialAtkVal = specialAtkVal;
+    }
+
+    public int getAvailableFunds() {
+        return availableFunds;
+    }
+
+    public void setAvailableFunds(int availableFunds) {
+        this.availableFunds = availableFunds;
     }
 }
