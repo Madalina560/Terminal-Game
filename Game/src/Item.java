@@ -1,12 +1,12 @@
-public class Potion {
+public class Item {
     String name;
     String type;
-    int statAdjuster;
+    String description;
 
-    public Potion(String name, String type, int statAdjuster) {
+    public Item(String name, String type, String description) {
         this.name = name;
         this.type = type;
-        this.statAdjuster = statAdjuster;
+        this.description = description;
     }
 
     public String getName() {
@@ -25,13 +25,12 @@ public class Potion {
         this.type = type;
     }
 
-    public int getStatAdjuster() {
-        return statAdjuster;
+    public String getDescription() {
+        return description;
     }
 
-    public void setStatAdjuster(int statAdjuster) {
-        this.statAdjuster = statAdjuster;
+    public void setDescription(String description) {
+        this.description = description;
     }
-
     
 }
